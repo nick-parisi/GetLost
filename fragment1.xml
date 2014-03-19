@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:columnCount="4"
+    android:orientation="horizontal" >
+
+    <Space
+        android:id="@+id/Space1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_gravity="left|top"
+        android:layout_row="2" />
+
+    <Button
+        android:id="@+id/markbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:onClick="mark"
+        android:text="@string/mark" />
+
+    <TextView
+        android:id="@+id/markedLatLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/markbutton"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/markedLat"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/markedLongLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/markedLatLabel"
+        android:layout_below="@+id/markedLatLabel"
+        android:layout_marginTop="16dp"
+        android:text="@string/markedLong"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/markedLong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/markedLongLabel"
+        android:layout_alignBottom="@+id/markedLongLabel"
+        android:layout_alignLeft="@+id/markedLat"
+        android:text="@string/blank"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/curLatLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/markedLongLabel"
+        android:layout_below="@+id/markedLongLabel"
+        android:layout_marginTop="101dp"
+        android:text="@string/curLat"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/curLongLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/curLatLabel"
+        android:layout_below="@+id/curLatLabel"
+        android:layout_marginTop="18dp"
+        android:text="@string/curLong"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/curLong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/curLongLabel"
+        android:layout_alignBottom="@+id/curLongLabel"
+        android:layout_alignLeft="@+id/curLat"
+        android:text="@string/blank"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/curLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/curLatLabel"
+        android:layout_alignBottom="@+id/curLatLabel"
+        android:layout_marginLeft="24dp"
+        android:layout_toRightOf="@+id/markedLongLabel"
+        android:text="@string/blank"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/markedLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/markedLongLabel"
+        android:layout_alignLeft="@+id/curLat"
+        android:text="@string/blank"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
